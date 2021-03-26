@@ -46,7 +46,7 @@ Open package.json. Under scripts, there is one defined which would run the db
 
     "db": "<path>/bin/mongod --dbpath=\"<data_folder_path>/mongodb-data\""
 
-The first `<path>` is the path to the unzipped mongodb community edition folder. `<data_folder_path>` is the path to the folder that was created. Replace path with their respective path values
+The first `<path>` is the path to the unzipped mongodb community edition folder. `<data_folder_path>` is the path to the folder that was created. If that foler was name anything other than `mongodb-data` rename it in `package.json` as well. Replace path with their respective path values
 
 Open `db > mongoose.js`. The db connection URI will be set as `mongodb://127.0.0.1:27017/<db_name>`. Replace db name with any other name. This will be the name of the database that will be created in mongodb.
 
