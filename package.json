@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon app.js",
     "start": "node app.js",
-    "db": "/Users/vaishnavthirumoorthy/mongodb/bin/mongod --dbpath=\"/Users/vaishnavthirumoorthy/mongodb-data\""
+    "db": "<path>/bin/mongod --dbpath=\"<path>/mongodb-data\""
   },
   "author": "",
   "license": "ISC",
