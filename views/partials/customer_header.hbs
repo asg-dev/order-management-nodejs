@@ -1,0 +1,23 @@
+<header class="banner">
+  <div class="header-top">
+  <a href="/orders/new" class="header-favicon"><img src="/images/restaurant.png" alt="Home" style="width: 100px; height:100px"></a>
+  <h1><i>Restaurant</i></h1>
+  </div>
+  <div class="header-profile">
+      <div class="welcome">
+          {{#if user}}
+          Hi <strong>{{user}}</strong> !
+          {{/if}}
+      </div>
+      {{#unless agent}}
+      <nav class="profile-nav">
+        <ul style="list-style-type: none;">
+          <li><a href="/logout"><i class="fas fa-sign-out-alt"></i></a></li>
+          <li><a href="/orders/my_orders">My Orders</a></li>
+          <li><a href="/orders/new">Order Now!</a></li>
+        </ul>
+      </nav>
+  {{/unless}}
+  </div>
+  <div class="clear-float"></div>
+</header>

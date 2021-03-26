@@ -1,0 +1,29 @@
+<div class="invoice-wrapper">
+<div class="invoice-container">
+<div class="invoice-logo" style="display: inline; width:100%">
+    <img src="/images/restaurant.png" alt="Home" style="width: 80px; height:80px; display:inline">
+    <p><i>Restaurant</i></p>
+</div>
+
+<div class="invoice-head">
+    {{#each order}}
+    <p><strong>Order Number:</strong>  #{{this.order_number}}</p>
+    <p><strong>Date:</strong> {{formatDate this.created_at "long"}}</p>
+    {{/each}}
+</div>
+<hr id="full">
+<div class="invoice-body">
+    <div class="invoice-user-info">
+        {{#each user}}
+        <p><strong>Customer Details:</strong></p>
+        <p><strong>Name:</strong> {{this.name}}</p>
+        <p><strong>Email:</strong> {{this.email}}</p>
+        {{/each}}
+    </div>
+    <div class="invoice-table">
+        <p><strong>Order Details:</strong></p>
+        {{> order_details_items}}
+    </div>
+</div>
+</div>
+</div>
