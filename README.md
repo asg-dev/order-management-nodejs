@@ -72,6 +72,6 @@ This will run the app with nodemon. If nodemon is not installed, install it glob
 
     npm install -g nodemon 
     
-Once the app is started, mongodb connection will be established and log `MongoDB Connected` will be prited to the console.
+Once the app is started, mongodb connection will be established and a log statement `MongoDB Connected` will be printed to the console.
 
 The app will be accessible in `http://localhost:3000/`
